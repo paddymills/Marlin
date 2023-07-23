@@ -1179,8 +1179,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-// TODO: update BL Touch offset
-#define NOZZLE_TO_PROBE_OFFSET { -44, -7, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -32, -7, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1374,9 +1373,8 @@
 #define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-// TODO: update new home
 #define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define Y_MIN_POS 10
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE + 15 // Extended max to allow the probe to reach more of the bed.
 #define Y_MAX_POS Y_BED_SIZE
